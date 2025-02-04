@@ -10,12 +10,16 @@ import {
   FaPinterest,
 } from "react-icons/fa";
 
+const whatsappNumber = "+919000334512";
+const message = "Hello, I am interested to know more about VS Genx";
+const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 export const SocialLinks = () => (
+  
   <div className="text-center space-y-4">
     <div
       className="grid grid-cols-4 gap-4 sm:gap-6 md:flex md:justify-center md:gap-6 mt-4"
     >
-      <a
+      {/* <a
         href="https://www.instagram.com/tltechnologiespvtltd/"
         target="_blank"
         rel="noopener noreferrer"
@@ -32,9 +36,9 @@ export const SocialLinks = () => (
         aria-label="Facebook"
       >
         <FaFacebookF className="w-8 h-8 sm:w-10 sm:h-10" />
-      </a>
+      </a> */}
       <a
-        href="https://www.linkedin.com/company/tltechnologiespvtltd/"
+        href="https://www.linkedin.com/in/venkatesans/"
         target="_blank"
         rel="noopener noreferrer"
         className="text-gray-300 hover:text-white transition-colors duration-200"
@@ -43,15 +47,15 @@ export const SocialLinks = () => (
         <FaLinkedinIn className="w-8 h-8 sm:w-10 sm:h-10" />
       </a>
       <a
-        href="https://api.whatsapp.com/send/?phone=%2B919061432814&text=Hello%2C+I+am+interested+to+know+more+about+PRODUCTS+%26+SERVICES&type=phone_number&app_absent=0"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-gray-300 hover:text-white transition-colors duration-200"
-        aria-label="WhatsApp"
-      >
-        <FaWhatsapp className="w-8 h-8 sm:w-10 sm:h-10" />
-      </a>
-      <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-white transition-colors duration-200"
+  aria-label="WhatsApp"
+>
+  <FaWhatsapp className="w-8 h-8 sm:w-10 sm:h-10" />
+</a>;
+      {/* <a
         href="https://www.youtube.com/@tltechnologiespvtltd-sangi"
         target="_blank"
         rel="noopener noreferrer"
@@ -86,7 +90,7 @@ export const SocialLinks = () => (
         aria-label="Pinterest"
       >
         <FaPinterest className="w-8 h-8 sm:w-10 sm:h-10" />
-      </a>
+      </a> */}
     </div>
   </div>
 );

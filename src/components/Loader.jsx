@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '/eh-logo-new.png';
+import logo from '/vsg-logo.png';
 
 const Loader = () => {
     const [progress, setProgress] = useState(0);
@@ -26,8 +26,8 @@ const Loader = () => {
                 src={logo}
                 alt="EveryHome Logo"
                 style={{
-                    width: '130px', // Custom width for logo
-                    height: '130px', // Custom height for logo
+                    width: '180px', // Custom width for logo
+                    height: '120px', // Custom height for logo
                     marginBottom: '1.5rem', // Margin below the logo
                     borderRadius: '12px', // Rounded corners for a modern look
 

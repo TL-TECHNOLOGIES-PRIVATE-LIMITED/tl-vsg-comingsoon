@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '/eh-logo.jpg';
+import logo from '/vsg-logo.png';
 import { Header } from './components/Header';
 import { CountdownTimer } from './components/CountdownTimer';
 import { SocialLinks } from './components/SocialLinks';
@@ -7,7 +7,7 @@ import { Footer } from './components/Footer';
 import DateDisplay from './components/DateDisplay';
 import Loader from './components/Loader';
 
-const launchDateMs = new Date('2025-01-15T00:00:00').getTime(); // Launch date in milliseconds
+const launchDateMs = new Date('2025-02-08T00:00:00Z').getTime(); // Launch date in milliseconds
 const launchDateSeconds = launchDateMs / 1000; // Convert to seconds for the CountdownTimer
 
 export default function App() {
